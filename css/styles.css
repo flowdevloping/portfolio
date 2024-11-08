@@ -106,6 +106,7 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  max-width: 100%;
 }
 
 hr {
@@ -319,7 +320,6 @@ figure {
 img,
 svg {
   vertical-align:middle;
-  object-fit:cover;
 }
 
 table {
@@ -612,8 +612,9 @@ progress {
 }
 
 .img-fluid {
-  max-width: 100%;
-  height: auto;
+  height: 60vh;
+  object-fit:contain;
+
 }
 
 .img-thumbnail {
@@ -657,7 +658,14 @@ progress {
 
 .spline-container {
   height: 100%;
-  overflow: visible;
+  display: flex;
+  justify-content: center;
+}
+
+spline-viewer{
+  height:100vh;
+  width: 90vw;
+  overflow:hidden;
 }
 
 @media (min-width: 576px) {
@@ -11038,13 +11046,20 @@ html {
   position: relative;
   display: flex;
   max-width: 25rem;
-  height: 100%;
+  max-height: 60vh;
   width: 100%;
   border:solid 1px;
   border-radius: 0.5rem;
   overflow: hidden;
-
 }
+
+
+.portfolio-item img {
+    width: 100%; /* Bild auf Container-Größe skalieren */
+    height: 100%; /* Bild auf Container-Größe skalieren */
+    object-fit: cover; /* Bild beschneiden, damit es die Box ausfüllt */
+}
+
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
   top: 0;
