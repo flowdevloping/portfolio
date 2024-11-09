@@ -3007,36 +3007,36 @@ textarea.form-control-lg {
 }
 
 .btn-outline-primary {
-  --bs-btn-color: #1abc9c;
-  --bs-btn-border-color: #1abc9c;
+  --bs-btn-color: var(--bs-accent);
+  --bs-btn-border-color: var(--bs-accent);
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #1abc9c;
-  --bs-btn-hover-border-color: #1abc9c;
+  --bs-btn-hover-bg: var(--bs-accent);
+  --bs-btn-hover-border-color: var(--bs-accent);
   --bs-btn-focus-shadow-rgb: 26, 188, 156;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #1abc9c;
-  --bs-btn-active-border-color: #1abc9c;
+  --bs-btn-active-bg: var(--bs-accent);
+  --bs-btn-active-border-color: var(--bs-accent);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #1abc9c;
+  --bs-btn-disabled-color: var(--bs-accent);
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #1abc9c;
+  --bs-btn-disabled-border-color: var(--bs-accent);
   --bs-gradient: none;
 }
 
 .btn-outline-secondary {
-  --bs-btn-color: #2c3e50;
-  --bs-btn-border-color: #2c3e50;
+  --bs-btn-color: #74a1ce;
+  --bs-btn-border-color: #74a1ce;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #2c3e50;
-  --bs-btn-hover-border-color: #2c3e50;
+  --bs-btn-hover-bg: #74a1ce;
+  --bs-btn-hover-border-color: #74a1ce;
   --bs-btn-focus-shadow-rgb: 44, 62, 80;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #2c3e50;
-  --bs-btn-active-border-color: #2c3e50;
+  --bs-btn-active-bg: #74a1ce;
+  --bs-btn-active-border-color: #74a1ce;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #2c3e50;
+  --bs-btn-disabled-color: #74a1ce;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #2c3e50;
+  --bs-btn-disabled-border-color: #74a1ce;
   --bs-gradient: none;
 }
 
@@ -10907,7 +10907,8 @@ html {
   font-size: 1.25rem;
 }
 
-.btn-social {
+.btn-social,
+.btn-control {
   border-radius: 100%;
   display: inline-flex;
   width: 3.25rem;
@@ -10915,6 +10916,12 @@ html {
   font-size: 1.25rem;
   justify-content: center;
   align-items: center;
+}
+
+.btn-control {
+  border-radius: 0.3rem;
+  width: fit-content;
+  height: fit-content;
 }
 
 /* NAV SETTINGS*/
