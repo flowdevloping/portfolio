@@ -69,9 +69,13 @@ function getCurrentPrice(stockSymbol) {
         priceSpan.innerHTML = data[0]['close'];
         dateSpan.innerHTML = date;
         timeSpan.innerHTML = time;   
+
         stockSymbolText.innerHTML = stockSymbol;
+        stockSymbolText.id = stockSymbol;
+        
         stockName = data[0]['name'];
         stockNameText.innerHTML = stockName;
+        stockNameText.id = stockName;
 
         const stock = {
             symbol: stockSymbol,
