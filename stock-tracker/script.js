@@ -42,7 +42,7 @@ function hide(element){
 
 // LIVE PRICE
 function getCurrentPrice(stockSymbol) {
-    console.log('Trying to get current price')
+    console.log(`Trying to get current price of ${stockSymbol}`);
     fetch(`https://irp3olgj53.execute-api.eu-central-1.amazonaws.com/dev/get_price_live?symbol=${stockSymbol}`)
     .then(response => {
         if (!response.ok) {
@@ -72,7 +72,7 @@ function getCurrentPrice(stockSymbol) {
 
         stockSymbolText.innerHTML = stockSymbol;
         stockSymbolText.id = stockSymbol;
-        
+
         stockName = data[0]['name'];
         stockNameText.innerHTML = stockName;
         stockNameText.id = stockName;
@@ -220,7 +220,7 @@ stockInput.addEventListener('input', function(event) {
     }
     else {
         // Fetching stock symbols with API
-        fetch(`https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=BA&apikey=demo`)
+        fetch(`https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${KEYWORD_SEARCH}&apikey=9H9ZDBG6PJ46643K`)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Network response was not ok. Status: ${response.status}`);
