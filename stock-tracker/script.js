@@ -269,6 +269,12 @@ stockInput.addEventListener('input', function(event) {
     }
 });
 
+stockInput.addEventListener('change', function(event) {
+    getCurrentPrice(element.innerHTML);
+    plotlyChart(element.innerHTML, '1mo');
+});
+
+
 // LOCALSTORAGE
 const localStorageKey = 'watchedStock';
 
