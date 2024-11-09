@@ -1,0 +1,125 @@
+body {
+    font-family: 'Poppins';
+    background-color: #0D0B11;
+    color:white;
+}
+
+h1 {
+    text-align: center;
+    margin:0px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:64px;
+    margin-bottom:64px;
+}
+
+.container {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    background-color: #1F1F1F;
+    border-radius: 0.25rem;
+    padding: 2rem;
+    gap: 16px; 
+    align-items: center;
+    justify-content: center;
+    resize: both;
+    overflow: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.pxl_container {
+    --size: 4;
+    height: 33vw;
+    width: 33vw;
+    display: grid;
+    grid-template-columns: repeat(var(--size), 1fr);
+    grid-template-rows: repeat(var(--size), 1fr);
+    resize: both;
+    overflow: auto;
+    color:black;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: white;
+}
+
+.pixel{
+    background-color: rgb(255, 255, 255);
+    border: solid 0.1px;
+} 
+
+.pxl_settings {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width:100%
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    height: 40px;
+}
+
+.btn {
+    height: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+button {
+    -webkit-appearance: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    background-color: rgb(45, 45, 45);
+    color:white;
+    border: 0.0625rem rgba(255, 255, 255, 0);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0.0625rem 0.25rem;
+    cursor: pointer;
+    width: fit-content;
+    transition: 0.2s;
+    padding: 1.1rem 1.2rem;
+}
+
+button:hover {
+    background-color: rgb(109, 109, 109);
+    transition: 0.2s ease;
+}
+
+input[type='color'] {
+    -webkit-appearance: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25rem;
+    background-color: rgb(45, 45, 45);
+    color:white;
+    border: 0.0625rem rgba(255, 255, 255, 0);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0.0625rem 0.25rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 0.25rem;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 0rem;
+  }
+
+
+
+
