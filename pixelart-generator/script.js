@@ -9,6 +9,7 @@ const createBtn = document.getElementById('create_btn');
 // Function which creates grid with pixels
 function populate(size, event) {
     pxl_container.innerHTML = "";
+    pxl_container.style.backgroundColor = 'white';
     // Updating the --size CSS variable
     pxl_container.style.setProperty('--size', size);
 
