@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>Online Text Editor</title>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="options">
+                <button id="bold" class="option-button format">
+                    <span class="material-symbols-outlined">
+                        format_bold
+                    </span>
+                </button>
+                <button id="italic" class="option-button format">
+                    <span class="material-symbols-outlined">
+                        format_italic
+                    </span>
+                </button>
+                <button id="superscript" class="option-button script">
+                    <span class="material-symbols-outlined">
+                        superscript
+                        </span>
+                </button>
+                <button id="subscript" class="option-button script">
+                    <span class="material-symbols-outlined">
+                        subscript
+                        </span>
+                </button>
+
+                <button id="insertOrderedList" class="option-button">
+                    <span class="material-symbols-outlined">
+                        format_list_numbered
+                        </span>
+                </button>
+                <button id="insertUnorderedList" class="option-button">
+                    <span class="material-symbols-outlined">
+                        format_list_bulleted
+                        </span>
+                </button>
+
+                <button id="undo" class="option-button">
+                    <span class="material-symbols-outlined">
+                        rotate_left
+                        </span>
+                </button>
+                <button id="redo" class="option-button">
+                    <span class="material-symbols-outlined">
+                        rotate_right
+                        </span>
+                </button>
+
+                <button id="createLink" class="option-button">
+                    <span class="material-symbols-outlined">
+                        link
+                        </span>
+                </button>
+                <button id="unlink" class="option-button">
+                    <span class="material-symbols-outlined">
+                        link_off
+                        </span>
+                </button>
+
+                <button id="justifyLeft" class="option-button align">
+                    <span class="material-symbols-outlined">
+                        format_align_left
+                        </span>
+                </button>
+                <button id="justifyCenter" class="option-button align">
+                    <span class="material-symbols-outlined">
+                        format_align_center
+                        </span>
+                </button>
+                <button id="justifyRight" class="option-button align">
+                    <span class="material-symbols-outlined">
+                        format_align_right
+                        </span>
+                </button>
+                <button id="justifyFull" class="option-button align">
+                    <span class="material-symbols-outlined">
+                        format_align_justify
+                        </span>
+                </button>
+                <button id="indent" class="option-button spacing">
+                    <span class="material-symbols-outlined">
+                        format_indent_increase
+                        </span>
+                </button>
+                <button id="outdent" class="option-button spacing">
+                    <span class="material-symbols-outlined">
+                        format_indent_decrease
+                        </span>
+                </button>
+
+                <div class="font-control-wrapper">
+                    <select id="formatBlock" class="adv-option-button">
+                        <option value="div">none</option>
+                        <option value="H1">H1</option>
+                        <option value="H2">H2</option>
+                        <option value="H3">H3</option>
+                        <option value="H4">H4</option>
+                        <option value="H5">H5</option>
+                        <option value="H6">H6</option>
+                    </select>
+                    <select id="fontName" class="adv-option-button">
+                        <option selected disabled>Font</option>
+                    </select>
+                    <select id="fontSize" class="adv-option-button">
+                        <option selected disabled>Font size</option>
+                    </select>
+                    
+                    <div class="color-control-wrapper">
+                        <div class="input-wrapper">
+                            <input type="color" id="foreColor" class="forecolor-button">
+                            <label for="foreColor">Font Color</label>
+                            <div class="range-wrapper">
+                                <input type="range" id="foreColorAlpha" min="0" max="100" value="100">
+                                <div id="foreColorAlphaValue"></div>
+                            </div>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="color" id="backColor" class="backcolor-button">
+                            <label for="backColor">Highlight Color</label>
+                            <div class="range-wrapper">
+                                <input type="range" id="backColorAlpha" min="0" max="100" value="100">
+                                <div id="backColorAlphaValue"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="text-input" contenteditable="true"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
