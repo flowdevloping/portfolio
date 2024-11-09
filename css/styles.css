@@ -612,9 +612,14 @@ progress {
 }
 
 .img-fluid {
-  height: 60vh;
   object-fit:contain;
+  height: 60vh;
+}
 
+@media (max-width:600px) {
+  .img-fluid {
+    height: 40vh;
+  }
 }
 
 .img-thumbnail {
@@ -11053,11 +11058,19 @@ html {
   position: relative;
   display: flex;
   max-width: 25rem;
-  max-height: 60vh;
+  height: 55vh;
   width: 100%;
   border:solid 1px;
   border-radius: 0.5rem;
   overflow: hidden;
+}
+
+@media (max-width:500px) {
+  .portfolio .portfolio-item {
+    height:45vh;
+    width: 90vw;
+
+  }
 }
 
 
