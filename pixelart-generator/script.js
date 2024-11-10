@@ -107,3 +107,8 @@ function saveAsImage() {
 // Event Listener to save the picture
 saveBtn.addEventListener('click', saveAsImage);
 
+// Bootstrap Tooltips
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+

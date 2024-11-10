@@ -53,7 +53,7 @@ section {
 .pxl_settings {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     width:100%
 }
 
@@ -63,14 +63,6 @@ section {
     justify-content:space-between;
     align-items: center;
     height: 40px;
-}
-
-.btn {
-    height: 40px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 4px;
-    padding-bottom: 4px;
 }
 
 button {
@@ -87,7 +79,8 @@ button {
     cursor: pointer;
     width: fit-content;
     transition: 0.2s;
-    padding: 1.1rem 1.2rem;
+    height: 40px;
+
 }
 
 button:hover {
@@ -107,6 +100,8 @@ input[type='color'] {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 0.0625rem 0.25rem;
     cursor: pointer;
     transition: 0.2s;
+    padding:0.5rem;
+    height: 40px;
 }
 
 input[type="color"]::-webkit-color-swatch {
@@ -118,6 +113,15 @@ input[type="color"]::-webkit-color-swatch {
 ::-webkit-scrollbar {
     width: 0rem;
   }
+
+.flex {
+display: flex;
+align-items: center;
+}
+
+.info {
+    margin-left: auto;
+}
 
 
 
