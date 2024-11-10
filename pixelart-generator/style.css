@@ -63,6 +63,7 @@ section {
     justify-content:space-between;
     align-items: center;
     height: 40px;
+   
 }
 
 button {
@@ -80,7 +81,6 @@ button {
     width: fit-content;
     transition: 0.2s;
     height: 40px;
-
 }
 
 button:hover {
