@@ -4,3 +4,9 @@
 [submodule "pixelart-generator"]
 	path = pixelart-generator
 	url = https://github.com/flowdevloping/pixelart-generator.git
+[submodule "text-editor"]
+	path = text-editor
+	url = https://github.com/flowdevloping/text-editor.git
+[submodule "stock-tracker"]
+	path = stock-tracker
+	url = https://github.com/flowdevloping/stock-tracker.git
